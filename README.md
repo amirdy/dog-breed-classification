@@ -1,8 +1,14 @@
 # dogbreed
+[LIVE DEMO]()
+### Computer Browser Demo: 
+![Web Demo](images/web.gif)
+
+### Mobile Browser Demo:
+![mobile Demo](images/mobile.gif)
 
 # Application part 
 This project predicts  the breed from 173 defferent breeds
-
+  
 ### Stack:
 
 HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python 
@@ -15,7 +21,7 @@ HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python
 
 # AI part 
 
-## Dataset:
+### Dataset:
 
 Combination of 3 datasets:
 
@@ -26,15 +32,15 @@ Combination of 3 datasets:
 - [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
 
 
-## Epoch1:
+### Fold1:
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
-## Epoch2:
+### Fold2:
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
-## Epoch3:
+### Fold3:
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
-## Epoch4:
+### Fold4:
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
-## Epoch5:
+### Fold5:
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
 
 
