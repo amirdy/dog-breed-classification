@@ -1,9 +1,10 @@
 # dogbreed
+
 [LIVE DEMO]()
-### Computer Browser Demo: 
+### <ins>Computer Browser Demo: </ins>
 ![Web Demo](images/web.gif)
 
-### Mobile Browser Demo:
+### <ins>Mobile Browser Demo:</ins>
 ![mobile Demo](images/mobile.gif)
 
 # Application part 
