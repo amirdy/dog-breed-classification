@@ -2,7 +2,7 @@
 
 
 
-<ins>[LIVE DEMO]() </ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[Web Application Section](#web-application-section)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[AI Section](#ai-section)</ins>
