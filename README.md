@@ -62,24 +62,34 @@ Combination of 3 datasets:
 
 - ### Fold1:
   - ##### Loss & Accuracy (60 Epochs):
+          - Best Validation Loss : 0.2975
+          - (In Epoch 59 | Accuracy : 91.12 %) [This model is selected]
 
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
 - ### Fold2:
   - ##### Loss & Accuracy (60 Epochs):
+          - Best Validation Loss : 0.3014
+          - (In Epoch 49 | Accuracy : 90.74 %) [This model is selected]  
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss2.png) ![alt text](images/acc2.png)
 - ### Fold3:
   - ##### Loss & Accuracy (60 Epochs):
+          - Best Validation Loss : 0.3360
+          - (In Epoch 44 | Accuracy : 90.29 %) [This model is selected]
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss3.png) ![alt text](images/acc3.png)
 - ### Fold4:
   - ##### Loss & Accuracy (60 Epochs):
+          - Best Validation Loss : 0.3574
+          - (In Epoch 55 | Accuracy : 90.60 %) [This model is selected]
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss4.png) ![alt text](images/acc4.png)
 - ### Fold5:
   - ##### Loss & Accuracy (60 Epochs):
+          - Best Validation Loss : 0.3220
+          - (In Epoch 53 | Accuracy : 90.12 %) [This model is selected]
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss5.png) ![alt text](images/acc5.png)
 
 
 
