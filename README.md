@@ -58,7 +58,7 @@ Combination of 3 datasets:
    - Python - Pytorch 
 
 
-#### 5 Fold Cross-Validation
+### 5 Fold Cross-Validation:
 
 - ### Fold1:
   - ##### Loss & Accuracy (60 Epochs):
