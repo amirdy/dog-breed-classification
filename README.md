@@ -1,10 +1,11 @@
 # dogbreed
+[link](###icon-set)
 
-[LIVE DEMO]()
-### <ins>Computer Browser Demo: </ins>
+<ins>[LIVE DEMO]() </ins>
+### Computer Browser Demo: 
 ![Web Demo](images/web.gif)
 
-### <ins>Mobile Browser Demo:</ins>
+### Mobile Browser Demo:
 ![mobile Demo](images/mobile.gif)
 
 # Application part 
@@ -14,7 +15,7 @@ This project predicts  the breed from 173 defferent breeds
 
 HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python 
 
-### Icon Set: 
+### Icon Set:
 [Fontawesome](https://www.Fontawesome.com)
 
 ### Source of Images: 
