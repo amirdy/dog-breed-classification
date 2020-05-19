@@ -1,16 +1,19 @@
 # dogbreed
-<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>
-<ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>
 
 
-<ins>[LIVE DEMO]() </ins>
+
+<ins>[LIVE DEMO]() </ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[Application part](#application-section)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[AI part](#ai-section)</ins>
+&nbsp;&nbsp;&nbsp;
 ### Computer Browser Demo: 
 ![Web Demo](images/web.gif)
 
 ### Mobile Browser Demo:
 ![mobile Demo](images/mobile.gif)
 
-# Application part 
+# Application Section 
 This project predicts  the breed from 173 defferent breeds
   
 ### Stack:
@@ -23,7 +26,7 @@ HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python
 ### Source of Images: 
 [Unsplash](https://unsplash.com/)
 
-# AI part 
+# AI Section: 
 
 ### Dataset:
 
