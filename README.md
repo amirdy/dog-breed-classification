@@ -1,5 +1,7 @@
 # dogbreed
-[link](###icon-set)
+<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>
+<ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>
+
 
 <ins>[LIVE DEMO]() </ins>
 ### Computer Browser Demo: 
