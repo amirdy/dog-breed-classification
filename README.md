@@ -1,5 +1,6 @@
-# dogbreed
+# Dog Breed Classification
 
+This project predicts  the breed from 173 defferent breeds
 
 
 <ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
@@ -14,7 +15,6 @@
 ![mobile Demo](images/mobile.gif)
 
 # Web Application Section 
-This project predicts  the breed from 173 defferent breeds
   
 ### Stack:
 
