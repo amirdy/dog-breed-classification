@@ -1,5 +1,5 @@
 # dogbreed
-[link](###icon-set\:)
+[link](###icon-set)
 
 <ins>[LIVE DEMO]() </ins>
 ### Computer Browser Demo: 
