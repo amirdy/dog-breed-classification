@@ -4,8 +4,8 @@
 
 <ins>[LIVE DEMO]() </ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
-<ins>[Application part](#application-section)</ins>&nbsp;&nbsp;&nbsp;
-<ins>[AI part](#ai-section)</ins>
+<ins>[Application Section](#application-section)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[AI Section](#ai-section)</ins>
 &nbsp;&nbsp;&nbsp;
 ### Computer Browser Demo: 
 ![Web Demo](images/web.gif)
