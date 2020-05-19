@@ -67,19 +67,19 @@ Combination of 3 datasets:
 - ### Fold2:
   - ##### Loss & Accuracy (60 Epochs):
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss2.png) ![alt text](images/acc2.png)
 - ### Fold3:
   - ##### Loss & Accuracy (60 Epochs):
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss3.png) ![alt text](images/acc3.png)
 - ### Fold4:
   - ##### Loss & Accuracy (60 Epochs):
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss4.png) ![alt text](images/acc4.png)
 - ### Fold5:
   - ##### Loss & Accuracy (60 Epochs):
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](images/loss5.png) ![alt text](images/acc5.png)
 
 
 
