@@ -48,7 +48,7 @@ Number of total images:
 
 - Stack these features toghether -> (2048 + 2048 + 2048)
 
-- Feed that to a one layer classifier (just train the classifier)
+- Feed that to a one layer classifier ( just train the classifier )
 
 ### Details of Implementation:
 - #### Genreralization: 
@@ -57,6 +57,8 @@ Number of total images:
    - 0.8
 - #### Weight Decay: 
    - 1e-4
+- #### Batch size: 
+   - 32 
 - #### Learning rate: 
    - 0.0001
 - #### Optimizer: 
@@ -64,9 +66,9 @@ Number of total images:
 - #### Train / Test Split: 
    - Approximately : 0.8 | 0.2 
 - #### Tools: 
-   - Python - Pytorch (Using Google Colab Pro)
+   - Python - Pytorch ( Using Google Colab Pro )
 - #### Processing: 
-   - Resize (h=400, w=300)| Rotate | Noramlize
+   - Resize (h=400, w=300) | Rotate | Noramlize
 - #### Test Result: 
    - loss : 0.2230  | Accuracy: 92.87 
 
