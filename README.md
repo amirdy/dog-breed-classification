@@ -53,10 +53,11 @@ Combination of 3 datasets:
 - #### Learning rate: 
    - 0.0001
 - #### Train / Test Split: 
-   - Approximately : 0.8 Train | 0.2 Test  
+   - Approximately : 0.8 | 0.2 
 - #### Tools: 
-   - Python - Pytorch 
-
+   - Python - Pytorch (Using google colab pro)
+- #### Test Result: 
+   - loss : 0.2230  | Accuracy: 92.87 
 
 ### 5 Fold Cross-Validation:
 
