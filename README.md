@@ -58,7 +58,7 @@ Number of total images:
 - #### Train / Test Split: 
    - Approximately : 0.8 | 0.2 
 - #### Tools: 
-   - Python - Pytorch (Using google colab pro)
+   - Python - Pytorch (Using Google Colab Pro)
 - #### Test Result: 
    - loss : 0.2230  | Accuracy: 92.87 
 
