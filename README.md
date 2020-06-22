@@ -39,22 +39,28 @@ Combination of 3 datasets:
 - [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
 
 Number of total images:
-
 - 22870
+
 ### Model:
 - Using 3 pretrained models ( Inception_V3, Resnext101, Resnet152 )
 
 - Feed the image into models seperately and get the the last Conv features
 
-- Stack these features toghether
+- Stack these features toghether -> (2048 + 2048 + 2048)
 
-- Feed that to a one layer classifier
+- Feed that to a one layer classifier (just train the classifier)
 
 ### Details of Implementation:
 - #### Genreralization: 
    - Drop out (Classifier) + Weight Decay + 5 Fold Cross-Validation
+- #### Dropout: 
+   - 0.8
+- #### Weight Decay: 
+   - 1e-4
 - #### Learning rate: 
    - 0.0001
+- #### Optimizer: 
+   - ADAM
 - #### Train / Test Split: 
    - Approximately : 0.8 | 0.2 
 - #### Tools: 
