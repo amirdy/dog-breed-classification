@@ -32,63 +32,68 @@ HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python
 
 Combination of 3 datasets:
 
-- [Dog Breed Identification](https://www.kaggle.com/c/dog-breed-identification/data)
+- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 
 - [Dog Breed Classification](https://www.kaggle.com/venktesh/person-images)
 
 - [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
 
+Number of total images:
+
+- 22870
 ### Model:
-- Using 3 pretrained models ( Inception_V3, Resnext50, Resnet50 )
+- Using 3 pretrained models ( Inception_V3, Resnext101, Resnet152 )
 
 - Feed the image into models seperately and get the the last Conv features
 
 - Stack these features toghether
 
-- Feed that to a two layer classifier
+- Feed that to a one layer classifier
 
 ### Details of Implementation:
 - #### Genreralization: 
    - Drop out (Classifier) + Weight Decay + 5 Fold Cross-Validation
 - #### Learning rate: 
    - 0.0001
-- #### Train / Valid Split: 
-   - Approximately : 0.8 Train | 0.2 Validation  
+- #### Train / Test Split: 
+   - Approximately : 0.8 | 0.2 
 - #### Tools: 
-   - Python - Pytorch 
-
+   - Python - Pytorch (Using Google Colab Pro)
+- #### Test Result: 
+   - loss : 0.2230  | Accuracy: 92.87 
 
 ### 5 Fold Cross-Validation:
 
 - ### Fold1:
-  - ##### Loss & Accuracy (60 Epochs):
-          - Best Validation Loss : 0.2975
-          - (In Epoch 59 | Accuracy : 91.12 %) [This model is selected]
+  - ##### Loss & Accuracy (80 Epochs):
+          - Best Validation Loss : 0.2621
+          - (In Epoch 65 | Accuracy : 91.64 %) [This model is selected]
+          - Test Accuracy on this model : 92.40 %
 
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
 - ### Fold2:
-  - ##### Loss & Accuracy (60 Epochs):
-          - Best Validation Loss : 0.3014
-          - (In Epoch 49 | Accuracy : 90.74 %) [This model is selected]  
-
+  - ##### Loss & Accuracy (80 Epochs):
+          - Best Validation Loss : 0.2361
+          - (In Epoch 58 | Accuracy : 91.89 %) [This model is selected]  
+          - Test Accuracy on this model : 92.27 %
 ![alt text](images/loss2.png) ![alt text](images/acc2.png)
 - ### Fold3:
-  - ##### Loss & Accuracy (60 Epochs):
-          - Best Validation Loss : 0.3360
-          - (In Epoch 44 | Accuracy : 90.29 %) [This model is selected]
-
+  - ##### Loss & Accuracy (80 Epochs):
+          - Best Validation Loss : 0.2593
+          - (In Epoch 73 | Accuracy : 91.33 %) [This model is selected]
+          - Test Accuracy on this model : 92.36 %
 ![alt text](images/loss3.png) ![alt text](images/acc3.png)
 - ### Fold4:
-  - ##### Loss & Accuracy (60 Epochs):
-          - Best Validation Loss : 0.3574
-          - (In Epoch 55 | Accuracy : 90.60 %) [This model is selected]
-
+  - ##### Loss & Accuracy (80 Epochs):
+          - Best Validation Loss : 0.2584
+          - (In Epoch 50 | Accuracy : 91.73 %) [This model is selected]
+          - Test Accuracy on this model : 92.45 %
 ![alt text](images/loss4.png) ![alt text](images/acc4.png)
 - ### Fold5:
-  - ##### Loss & Accuracy (60 Epochs):
-          - Best Validation Loss : 0.3220
-          - (In Epoch 53 | Accuracy : 90.12 %) [This model is selected]
-
+  - ##### Loss & Accuracy (80 Epochs):
+          - Best Validation Loss : 0.2425
+          - (In Epoch 70 | Accuracy : 92.68 %) [This model is selected]
+          - Test Accuracy on this model : 92.40 %
 ![alt text](images/loss5.png) ![alt text](images/acc5.png)
 
 
