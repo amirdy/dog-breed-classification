@@ -32,12 +32,15 @@ HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python
 
 Combination of 3 datasets:
 
-- [Dog Breed Identification](https://www.kaggle.com/c/dog-breed-identification/data)
+- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 
 - [Dog Breed Classification](https://www.kaggle.com/venktesh/person-images)
 
 - [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
 
+Number of total images:
+
+- 22870
 ### Model:
 - Using 3 pretrained models ( Inception_V3, Resnext101, Resnet152 )
 
