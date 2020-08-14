@@ -50,7 +50,7 @@ Number of total images:
 
 ### Details of Implementation:
 - #### Genreralization: 
-   - Drop out (zero probability = 0.8) \[in classifier\] + 5 Fold Cross-Validation
+   - Drop out (0.8) \[in classifier\] + 5 Fold Cross-Validation
 - #### Dropout: 
    - 0.8
 - #### Batch size (Train): 
