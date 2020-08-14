@@ -66,7 +66,7 @@ Number of total images:
 - #### Tools: 
    - Python - Pytorch ( Using Google Colab Pro )
 - #### Processing: 
-   - Resize (h=400, w=350) | Rotate | Noramlize
+   - Resize (h=400, w=350) | Rotate | Normalize
 - #### Test Result: 
    - loss : 0.2230  | Accuracy: 92.87 
 
