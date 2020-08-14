@@ -39,7 +39,7 @@ Combination of 3 datasets:
 - [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
 
 Number of total images:
-- 22870
+- 22790
 
 ### Model:
 - Using [EfficientNet-B3](https://arxiv.org/abs/1905.11946) model ( pretrained )
@@ -50,7 +50,7 @@ Number of total images:
 
 ### Details of Implementation:
 - #### Genreralization: 
-   - Drop out (Classifier) + 5 Fold Cross-Validation
+   - Drop out (zero probability = 0.8) \[in classifier\] + 5 Fold Cross-Validation
 - #### Dropout: 
    - 0.8
 - #### Batch size (Train): 
