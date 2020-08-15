@@ -74,22 +74,22 @@ Number of total images:
 
 - ### Fold1:
   - ##### Loss & Accuracy (150 Epochs):
-          - Best Validation Loss : 0.2621
-          - (In Epoch 65 | Accuracy : 91.64 %) [This model is selected]
-          - Test Accuracy on this model : 92.40 %
+          - Best Validation Loss : 0.2477
+          - (In Epoch 134 | Accuracy : 92.60 %) [This model is selected]
+          - Test Accuracy on this model : 92.48 %
 
 ![alt text](images/loss1.png) ![alt text](images/acc1.png)
 - ### Fold2:
   - ##### Loss & Accuracy (150 Epochs):
-          - Best Validation Loss : 0.2361
-          - (In Epoch 58 | Accuracy : 91.89 %) [This model is selected]  
-          - Test Accuracy on this model : 92.27 %
+          - Best Validation Loss : 0.2262
+          - (In Epoch 147 | Accuracy : 92.39 %) [This model is selected]  
+          - Test Accuracy on this model : 92.68 %
 ![alt text](images/loss2.png) ![alt text](images/acc2.png)
 - ### Fold3:
   - ##### Loss & Accuracy (150 Epochs):
-          - Best Validation Loss : 0.2593
-          - (In Epoch 73 | Accuracy : 91.33 %) [This model is selected]
-          - Test Accuracy on this model : 92.36 %
+          - Best Validation Loss : 0.2489
+          - (In Epoch 111 | Accuracy : 91.86 %) [This model is selected]
+          - Test Accuracy on this model : 92.39 %
 ![alt text](images/loss3.png) ![alt text](images/acc3.png)
 - ### Fold4:
   - ##### Loss & Accuracy (150 Epochs):
