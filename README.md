@@ -2,17 +2,17 @@
 
 This project predicts  the breed from 150 defferent breeds.
 
-![Demo](images/Demo.png)
+![Demo](README_Files/Demo.png)
 <ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[Web Application Section](#web-application-section)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[AI Section](#ai-section)</ins>
 &nbsp;&nbsp;&nbsp;
 ### Computer Browser Demo: 
-![Web Demo](images/web.gif)
+![Web Demo](README_Files/web.gif)
 
 ### Mobile Browser Demo:
-![mobile Demo](images/mobile.gif)
+![mobile Demo](README_Files/mobile.gif)
 
 # Web Application Section 
   
@@ -78,31 +78,31 @@ Number of total images:
           - (In Epoch 134 | Accuracy : 92.60 %) [This model is selected]
           - Test Accuracy on this model : 92.48 %
 
-![alt text](images/loss1.png) ![alt text](images/acc1.png)
+![alt text](README_Files/loss1.png) ![alt text](README_Files/acc1.png)
 - ### Fold2:
   - ##### Loss & Accuracy (150 Epochs):
           - Best Validation Loss : 0.2262
           - (In Epoch 147 | Accuracy : 92.39 %) [This model is selected]  
           - Test Accuracy on this model : 92.68 %
-![alt text](images/loss2.png) ![alt text](images/acc2.png)
+![alt text](README_Files/loss2.png) ![alt text](README_Files/acc2.png)
 - ### Fold3:
   - ##### Loss & Accuracy (150 Epochs):
           - Best Validation Loss : 0.2489
           - (In Epoch 111 | Accuracy : 91.86 %) [This model is selected]
           - Test Accuracy on this model : 92.39 %
-![alt text](images/loss3.png) ![alt text](images/acc3.png)
+![alt text](README_Files/loss3.png) ![alt text](README_Files/acc3.png)
 - ### Fold4:
   - ##### Loss & Accuracy (150 Epochs):
           - Best Validation Loss : 0.2630
           - (In Epoch 134 | Accuracy : 91.59 %) [This model is selected]
           - Test Accuracy on this model : 92.46 %
-![alt text](images/loss4.png) ![alt text](images/acc4.png)
+![alt text](README_Files/loss4.png) ![alt text](README_Files/acc4.png)
 - ### Fold5:
   - ##### Loss & Accuracy (150 Epochs):
           - Best Validation Loss : 0.2425
           - (In Epoch 135 | Accuracy : 92.46 %) [This model is selected]
           - Test Accuracy on this model : 92.33 %
-![alt text](images/loss5.png) ![alt text](images/acc5.png)
+![alt text](README_Files/loss5.png) ![alt text](README_Files/acc5.png)
 
 
 
