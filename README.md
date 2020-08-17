@@ -68,7 +68,7 @@ Number of total images:
 - #### Processing: 
    - Resize (H = 400, W = 350) | Rotate | Normalize
 - #### Test Result: 
-   - loss : 0.2230  | Accuracy: 92.87 
+   - loss : 0.2281  | Accuracy: 92.5884
 
 ### 5 Fold Cross-Validation:
 
