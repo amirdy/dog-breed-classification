@@ -1,6 +1,6 @@
 # Dog Breed Classification
 
-This project predicts  the breed from 150 different breeds.
+This project predicts  the dog breed from 150 different breeds.
 
 ![Demo](README_Files/Demo.png)
 <ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
