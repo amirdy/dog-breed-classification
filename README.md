@@ -5,6 +5,7 @@ This project predicts  the breed from 150 defferent breeds.
 ![Demo](README_Files/Demo.png)
 <ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[Setup](#Setup)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[Web Application Section](#web-application-section)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[AI Section](#ai-section)</ins>
 &nbsp;&nbsp;&nbsp;
@@ -14,6 +15,20 @@ This project predicts  the breed from 150 defferent breeds.
 ### Mobile Browser Demo:
 ![mobile Demo](README_Files/mobile.gif)
 
+## Setup
+```
+ -> git clone https://github.com/amirdy/dog-breed-classification.git 
+ -> cd dog-breed-classification 
+ -> python -m venv env 
+ -> ( Activate the virtual environment (env) based on your OS )
+ -> pip install -r requirements.txt
+ -> pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+ -> flask run
+ ```
+ #### Note: 
+ For enabling [Fontawesome](https://www.Fontawesome.com) icons, you must add Fontawesome CDN into the index.html ( inside the `<head>` tag ).
+ 
+ You can find this CDN from [here](https://fontawesome.com/account/cdn).
 # Web Application Section 
   
 ### Stack:
