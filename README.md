@@ -18,7 +18,7 @@ This project predicts  the breed from 150 defferent breeds.
 ## Setup
 ```
  -> git clone https://github.com/amirdy/dog-breed-classification.git 
- -> cd dog-breed-classification 
+ -> cd dog-breed-classification/Web_App
  -> python -m venv env 
  -> ( Activate the virtual environment (env) based on your OS )
  -> pip install -r requirements.txt
