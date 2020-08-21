@@ -32,6 +32,7 @@ Leave the python shell and run the commands below:
  $ source ./env/bin/activate
  (env)$ pip install -r requirements.txt
  (env)$ pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+ (env)$ pip install efficientnet_pytorch
  (env)$ flask run
  ```
  #### Note: 
