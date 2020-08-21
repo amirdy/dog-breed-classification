@@ -16,10 +16,11 @@ This project predicts  the dog breed from 150 different breeds.
 ![mobile Demo](README_Files/mobile.gif)
 
 # Setup
-## Ubuntu
-First install `python3.7` and `python3.7-venv` on yor OS.
+## Ubuntu 16 LTS
+First install `python3.7` and `python3.7-venv` on the OS.
 
-Check:
+#### Check:
+
 By typing `python3.7` and hiting Enter, Python shell will appear (version 3.7).
 
 Leave the python shell and run the commands below:
