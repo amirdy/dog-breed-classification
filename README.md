@@ -66,11 +66,11 @@ Number of total images:
 - 22790
 
 ### Model:
-- Using [EfficientNet-B3](https://arxiv.org/abs/1905.11946) model ( pretrained )
+- Using pretrained [EfficientNet-B3](https://arxiv.org/abs/1905.11946) model
 
-- Feed the image into the model and save the last Conv features
+- Image was fed into the model and the last Conv features were saved
 
-- Feed that to a one layer classifier ( just train the classifier )
+- These features were fed into a one layer classifier (Training)
 
 ### Details of Implementation:
 - #### Genreralization: 
