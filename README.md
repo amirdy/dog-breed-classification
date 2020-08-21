@@ -15,15 +15,23 @@ This project predicts  the dog breed from 150 different breeds.
 ### Mobile Browser Demo:
 ![mobile Demo](README_Files/mobile.gif)
 
-## Setup
+# Setup
+## Ubuntu
+First install `python3.7` and `python3.7-venv` on yor OS.
+
+Check:
+By typing `python3.7` and hiting Enter, Python shell will appear (version 3.7).
+
+Leave the python shell and run the commands below:
+
 ```
- -> git clone https://github.com/amirdy/dog-breed-classification.git 
- -> cd dog-breed-classification/Web_App
- -> python -m venv env 
- -> ( Activate the virtual environment (env) based on your OS )
- -> pip install -r requirements.txt
- -> pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
- -> flask run
+ $ git clone https://github.com/amirdy/dog-breed-classification.git 
+ $ cd dog-breed-classification/Web_App
+ $ python3.7 -m venv env 
+ $ source ./env/bin/activate
+ (env)$ pip install -r requirements.txt
+ (env)$ pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+ (env)$ flask run
  ```
  #### Note: 
  For enabling [Fontawesome](https://www.Fontawesome.com) icons, you must add Fontawesome CDN into the index.html ( inside the `<head>` tag ).
