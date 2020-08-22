@@ -1331,6 +1331,8 @@ $("#upld").on('change',function (e) {
   });
 });
 
+// welcome modal
+document.getElementById("wlcm").click();
 // ajax run
 $("#run").on('click',function (e) {
 	if($("#best").hasClass("pleaseShake")){
