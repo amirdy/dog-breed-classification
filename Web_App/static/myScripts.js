@@ -1,5 +1,6 @@
 $(document).ready(function(){ 
-
+// welcome modal
+document.getElementById("wlcm").click();
 
 // loss fold1
 var loss1 = document.getElementById('ls1').getContext('2d');
@@ -1331,8 +1332,6 @@ $("#upld").on('change',function (e) {
   });
 });
 
-// welcome modal
-document.getElementById("wlcm").click();
 // ajax run
 $("#run").on('click',function (e) {
 	if($("#best").hasClass("pleaseShake")){
@@ -1343,18 +1342,18 @@ $("#run").on('click',function (e) {
         $("#run").addClass("btn-info");
     $("#run").removeClass("btn-primary ");
     var source =document.getElementById('ranImg').src;
-    var d = {'image' : source};
-    $.ajax({
+   
+    var request = $.ajax({
       method: "POST",
       url: "/",
-      data: d,
-      error: function(){
+      data: {'image' : source}
+          });
+   request.fail( function(){
           document.getElementById("runLogo").className ="fas fa-arrow-alt-circle-right fa-lg mr-2";
           document.getElementById("buttonModalSrvr").click();
 
-      }
-	//  ,timeout: 200000 // sets timeout to 200 seconds
-    }).done(function(data) {
+      });
+  request.done(function(data) {
 	/*
 	onnx test
 	async function run(){
@@ -1367,7 +1366,7 @@ $("#run").on('click',function (e) {
 	}
 	run();
 	*/
-	
+		
 	$('#best').addClass("pleaseShake");
     document.getElementById("runLogo").className ="fas fa-arrow-alt-circle-right fa-lg mr-2";
     $('#fistChoice').html('<i class="fas fa-check-double mr-2 fa-lg"></i>'+data['o1']);
@@ -1378,7 +1377,7 @@ $("#run").on('click',function (e) {
     document.getElementById("boxRes").innerHTML = data['o1'];
     
 
-    a = data['o1'].split(" ");
+        a = data['o1'].split(" ");
 	b = a.slice(2)
 
 
@@ -1422,7 +1421,7 @@ $("#run").on('click',function (e) {
     
     
     
-    
+   
     
     
     
@@ -1461,7 +1460,7 @@ $("#run").on('click',function (e) {
     
       });
   
-});
+ });
 
 //Ajax feedback
 $("#form-feedback").on('submit',function (e) {
