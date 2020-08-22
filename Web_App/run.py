@@ -26,7 +26,7 @@ out2 = None
 out3 = None
 out4 = None
 out5 = None
-
+''' For Threading
 def calmlp1(x):
       global out1 
       model1 =  mlp(1536 , 150)
@@ -103,7 +103,7 @@ def calmlp5(x):
       del checkpoint
       gc.collect()
 
-
+'''
 
 
 
@@ -209,9 +209,68 @@ def r(p):
 
       
         
-     
-          
+      model1 = mlp(1536 , 150)
+      PATH="./models/mlp1.pth"
+      checkpoint = torch.load(PATH)
+      model1.load_state_dict(checkpoint['model_state_dict'])
+      model1.eval()
+      if cuda.is_available():
+        model1 = model1.cuda()      
+      out1=model1(x) #out1: torch.Size([batchsize, 150])  | 150 is number of output neurons
+      del model1
+      del checkpoint
+      gc.collect()
+      
+      model2 = mlp(1536 , 150)
+      PATH="./models/mlp2.pth"
+      checkpoint = torch.load(PATH)
+      model2.load_state_dict(checkpoint['model_state_dict'])
+      model2.eval()
+      if cuda.is_available():
+        model2 = model2.cuda()  
+      out2=model2(x) #out1: torch.Size([batchsize, 150])  | 150 is number of output neurons
+      del model2
+      del checkpoint
+      gc.collect()
 
+      model3 = mlp(1536 , 150)
+      PATH="./models/mlp3.pth"
+      checkpoint = torch.load(PATH)
+      model3.load_state_dict(checkpoint['model_state_dict'])
+      model3.eval()
+      if cuda.is_available():
+        model3 = model3.cuda()  
+      out3=model3(x) #out1: torch.Size([batchsize, 150])  | 150 is number of output neurons
+      del model3
+      del checkpoint
+      gc.collect()
+
+      model4 = mlp(1536 , 150)
+      PATH="./models/mlp4.pth"
+      checkpoint = torch.load(PATH)
+      model4.load_state_dict(checkpoint['model_state_dict'])
+      model4.eval()
+      if cuda.is_available():
+        model4 = model4.cuda()  
+      out4=model4(x) #out1: torch.Size([batchsize, 150])  | 150 is number of output neurons
+      del model4
+      del checkpoint
+      gc.collect()
+
+      model5 = mlp(1536 , 150)
+      PATH="./models/mlp5.pth"
+      checkpoint = torch.load(PATH)
+      model5.load_state_dict(checkpoint['model_state_dict'])
+      model5.eval()
+      if cuda.is_available():
+        model5 = model5.cuda()  
+      out5=model5(x) #out1: torch.Size([batchsize, 150])  | 150 is number of output neurons
+      del model5
+      del checkpoint
+      gc.collect()
+      
+          
+     ''' For Threading
       t1 = threading.Thread(target=calmlp1 , args = [x])
       t2 = threading.Thread(target=calmlp2 , args = [x])
       t3 = threading.Thread(target=calmlp3 , args = [x])
@@ -228,7 +287,7 @@ def r(p):
       t3.join()
       t4.join()
       t5.join()
-      
+      '''
       outputs=(out1 + out2 + out3 + out4+ out5) / 5
 
 
