@@ -126,7 +126,7 @@ def index():
 
 
 
-          data = {'o1':o1 ,'p1':p1,'o2':o2,'p2':p2,'xx':x.numpy().reshape(400*350*3).tolist()}
+          data = {'o1':o1 ,'p1':p1,'o2':o2,'p2':p2}
           resp= jsonify(data)
           resp.headers['Access-Control-Allow-Origins']='*'
 
