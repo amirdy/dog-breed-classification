@@ -22,6 +22,7 @@ First install `python3.7` and `python3.7-venv` on the OS.
 #### Check:
 
 By typing `python3.7` and hiting Enter, python shell will appear (version 3.7).
+
 Leave the python shell and run the commands below:
 
 #### Commands:
