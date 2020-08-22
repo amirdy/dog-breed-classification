@@ -20,9 +20,6 @@ from torch.utils.data import DataLoader
 from files.mlp import mlp
 from files.folder import *
 
-res = None
-rsx = None 
-inc = None
 
 out1 = None
 out2 = None
@@ -120,7 +117,7 @@ def r(p):
         # Train uses data augmentation
         'train':
         transforms.Compose([
-            transforms.RandomResizedCrop(size=(400,359), scale=(0.8, 1.0)),
+            transforms.RandomResizedCrop(size=(400,350), scale=(0.8, 1.0)),
             transforms.RandomRotation(degrees=20),
             transforms.ColorJitter(),
             transforms.RandomHorizontalFlip(),
