@@ -36,7 +36,7 @@ Leave the python shell and run the commands below:
  (env)$ pip install efficientnet_pytorch==0.6.3
  (env)$ flask run
  ```
- #### Important Note: 
+ #### Important Notice: 
  For enabling [Fontawesome](https://www.Fontawesome.com) icons, you must add Fontawesome CDN into the index.html ( inside the `<head>` tag ).
  
  You can find this CDN from [here](https://fontawesome.com/account/cdn).
