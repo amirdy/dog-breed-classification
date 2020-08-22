@@ -44,7 +44,7 @@ Leave the python shell and run the commands below:
   
 ### Stack:
 
-HTML - CSS - Js - Jquey - Bootstrap - Chart.js - Flask - Python 
+HTML - CSS - Js - Jquery - Bootstrap - Chart.js - Flask - Python 
 
 ### Icon Set:
 [Fontawesome](https://www.Fontawesome.com)
