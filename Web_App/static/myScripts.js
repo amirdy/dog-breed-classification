@@ -1304,7 +1304,7 @@ $("#upld").on('change',function (e) {
 
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
 
-//        document.getElementById("buttonModalUpld").click();
+        document.getElementById("buttonModalUpld").click();
 
         
     }
