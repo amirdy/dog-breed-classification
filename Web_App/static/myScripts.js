@@ -1306,6 +1306,8 @@ $("#upld").on('change',function (e) {
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center disabled";
         document.getElementById("buttonModalUpld").click();
         document.getElementById("ranImg").className = "d-none";
+        if($("#textinImage").hasClass("d-none"))
+                          $('#textinImage').removeClass("d-none");
 
 
         
