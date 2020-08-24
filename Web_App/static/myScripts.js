@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 // welcome modal
 document.getElementById("wlcm").click();
-
+imgAdd = "ADDRESS"
 // loss fold1
 var loss1 = document.getElementById('ls1').getContext('2d');
 var chartLS1 = new Chart(loss1, {
@@ -973,7 +973,8 @@ $(function () {
         prevran=ran
         $("#textinImage").addClass("d-none");
         $("#ranImg").attr("src",'./static/randomImg/'  + String(ran+1)+"/"+ String(ran+1)+"/" +String(ran+1) +'.jpg');
-        
+                imgAdd = document.getElementById('ranImg').src
+
        // $("#ranImg").addClass("d-block");
        $("#ranImg").removeClass("d-none");
         $("#ranImg").on('load',function(){
@@ -1283,6 +1284,12 @@ https://www.google.com/search?tbm=isch&q=findSomeI
 $("#upld").on('change',function (e) {
     var form_data = new FormData($('#form_upld')[0]);
     document.getElementById("upldIcn").className = "fas fa-spinner fa-spin fa-lg mr-2 ";
+    var reader = new FileReader();
+    reader.onload = function(e) {
+		$('#ranImg').attr('src', e.target.result);
+        }
+    if(this.files[0]!= undefined)
+   	 reader.readAsDataURL(this.files[0]);
 
     $.ajax({
       method: "POST",
@@ -1294,20 +1301,15 @@ $("#upld").on('change',function (e) {
       processData: false
     }).done(function(data) {
     if (data['img'] == "ERROR_extention"){
-        console.log("IU");
+
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
-        document.getElementById("buttonModalUpld").click();
+
+//        document.getElementById("buttonModalUpld").click();
 
         
     }
     else{
-    $('#textinImage').addClass("d-none");
     $('#ranImg').attr('data-original-title',"");
-
-
-
-    document.getElementById('ranImg').src= data['img'];
-    $("#ranImg").on('load',function(){
         if(data['h'] >=  data['w']){
             $('#ranImg').css("width","50%");
             $('#gryTxt').css("border-width","0px");
@@ -1319,14 +1321,17 @@ $("#upld").on('change',function (e) {
              if(!$("#gryTxt").hasClass("bg-dark"))
                   $('#gryTxt').addClass("bg-dark");
              }
-      document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
+
         $('#ranImg').tooltip('disable');
         $('#ranImg').tooltip('hide');
         document.getElementById("ranImg").className = "";
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center enabled";
+	imgAdd = data['img']
+        $('#textinImage').addClass("d-none"); 
+        document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
 
 
-        });
+       
     }
 
   });
@@ -1341,12 +1346,11 @@ $("#run").on('click',function (e) {
     document.getElementById("runLogo").className ="fas fa-cog  fa-spin fa-lg mr-2";
         $("#run").addClass("btn-info");
     $("#run").removeClass("btn-primary ");
-    var source =document.getElementById('ranImg').src;
    
     var request = $.ajax({
       method: "POST",
       url: "/",
-      data: {'image' : source}
+      data: {'image' : imgAdd}
           });
    request.fail( function(){
           document.getElementById("runLogo").className ="fas fa-arrow-alt-circle-right fa-lg mr-2";
