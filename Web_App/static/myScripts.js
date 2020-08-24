@@ -1303,12 +1303,15 @@ $("#upld").on('change',function (e) {
     if (data['img'] == "ERROR_extention"){
 
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
-
+        document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center disabled";
         document.getElementById("buttonModalUpld").click();
+        document.getElementById("ranImg").className = "d-none";
+
 
         
     }
     else{
+	   
     $('#ranImg').attr('data-original-title',"");
         if(data['h'] >=  data['w']){
             $('#ranImg').css("width","50%");
