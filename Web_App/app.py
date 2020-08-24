@@ -35,7 +35,7 @@ def index():
     #  save uploaded file and show it
 
     if 'file1' in request.files:
-          print("File uploaded")
+          
           file = request.files['file1']
           if file and allowed_file(file.filename): 
             filename = secure_filename(file.filename)
@@ -76,9 +76,9 @@ def index():
                     imgMain = imgMain.rotate(90, expand=True)
 
                 imgMain.save(os.path.join(dirr, name + "." +exten),exif=exif_bytes)
-                print("TT")
+                print(" ")
             except:             
-                  print("bbbb")
+                  print(" ")
             '''
             im = Image.open(os.path.join(dirr, filename))
             width, height = im.size
@@ -94,6 +94,7 @@ def index():
             dat = {'img':p ,'w':width,'h':height}
             resp= jsonify(dat)
             resp.headers['Access-Control-Allow-Origins']='*'
+            print("File uploaded")
             return resp
           else:
             dat = {'img':"ERROR_extention"}
