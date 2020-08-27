@@ -1289,14 +1289,20 @@ $("#upld").on('change',function (e) {
     var reader = new FileReader();
 
     reader.onload = function(e) {
+
 		$('#ranImg').attr('src', e.target.result);
         }
-    if(this.files[0]!= undefined) 
+    if(this.files[0]!= undefined)    
 	if(this.files[0].type == 'image/jpeg' || this.files[0].type == 'image/jpg' || this.files[0].type == 'image/png'){
+    	        //$('#ranImg').tooltip('disable');
+        	//$('#ranImg').tooltip('hide');
+		//$('#ranImg').attr('data-original-title',"Uploaded Image");
+                
+		document.getElementById("randomImage").disabled = true;
    		 reader.readAsDataURL(this.files[0]);
 		 isImage = true;
-		 $('#ranImg').tooltip('disable');
-       		 $('#ranImg').tooltip('hide');
+
+
 
 		}
 
@@ -1313,6 +1319,7 @@ $("#upld").on('change',function (e) {
 				if (percentComplete === 100) {
 				$('#spanUpldInner').html(" Waiting ...")
 
+
 				}
 				
 			  }
@@ -1324,7 +1331,7 @@ $("#upld").on('change',function (e) {
       url: "/",
       data: form_data,
       contentType: false,
-      contentType: false,
+      contentType: false, 
       cache: false,
       processData: false
     }).done(function(data) {
@@ -1336,7 +1343,7 @@ $("#upld").on('change',function (e) {
            
     }
     if (data['img'] != "ERROR_extention"){
-    $('#ranImg').attr('data-original-title',"");
+       $('#ranImg').attr('data-original-title',"Uploaded Image");
         if(data['h'] >=  data['w']){
             $('#ranImg').css("width","50%");
             $('#gryTxt').css("border-width","0px");
@@ -1348,8 +1355,7 @@ $("#upld").on('change',function (e) {
              if(!$("#gryTxt").hasClass("bg-dark"))
                   $('#gryTxt').addClass("bg-dark");
              }
-
-       
+       document.getElementById("randomImage").disabled = false;
         document.getElementById("ranImg").className = "";
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center enabled";
 	imgAdd = data['img']
