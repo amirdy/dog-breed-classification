@@ -156,6 +156,7 @@ def index():
           s.write(rb.sheet_by_index(0).nrows, 2, request.form["emailForm"])
           s.write(rb.sheet_by_index(0).nrows, 3, request.form["textForm"])
           wb.save('feedback.xls')
+          print("Message sent")          
           return (jsonify({"message":"Submitted"}))
           
           
