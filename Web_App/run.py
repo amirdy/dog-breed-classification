@@ -346,4 +346,4 @@ def r(p):
           break
     end = time.time()
     print("time: ",end - start)
-    return(o1,p1,o2,p2,im_data)
+    return(o1,p1,o2,p2)
