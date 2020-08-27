@@ -1,4 +1,4 @@
-from flask import Flask,render_template, request, url_for ,jsonify
+from  flask import Flask,render_template, request, url_for ,jsonify
 from werkzeug.utils import secure_filename
 from datetime import datetime
 import os
@@ -8,7 +8,7 @@ from xlutils.copy import copy
 from PIL import Image
 import piexif
 import shutil
-
+import random
 
 f = open("breed.txt", "r")
 breeds=[]
@@ -35,18 +35,22 @@ def index():
     #  save uploaded file and show it
 
     if 'file1' in request.files:
-          
           file = request.files['file1']
           if file and allowed_file(file.filename): 
             filename = secure_filename(file.filename)
             exten=filename.split(".")
             exten=exten[-1]
             datetime_object = datetime.now()
-            name = str(int(datetime_object.timestamp())-1586289491)
+            #name = str(int(datetime_object.timestamp())-1586289491)
+            name = str(random.randint(0, 1000000))
+
+            while(name in os.listdir(app.config['UPLOAD_FOLDER'])):
+                    name = str(random.randint(0, 1000000))
             dirr = os.path.join(app.config['UPLOAD_FOLDER'], name)
             os.mkdir(dirr)
             dirr = os.path.join(dirr, name)
             os.mkdir(dirr)
+            #file.resize((400, 350))
             file.save(os.path.join(dirr, name + "." +exten ))
             
 
@@ -95,6 +99,7 @@ def index():
             resp= jsonify(dat)
             resp.headers['Access-Control-Allow-Origins']='*'
             print("File uploaded")
+
             return resp
           else:
             dat = {'img':"ERROR_extention"}
@@ -137,7 +142,6 @@ def index():
                     shutil.rmtree(os.path.dirname(os.path.dirname(imgsrc[idx:])).replace("/static/","./static/"))
             
           
-
           return resp
           
     # save the feedback
@@ -179,6 +183,8 @@ def index():
             return resp
     return render_template("index.html")
     
+    
+
     
 
     
