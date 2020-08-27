@@ -5,7 +5,7 @@ imgAdd = "ADDRESS"
 // loss fold1
 var loss1 = document.getElementById('ls1').getContext('2d');
 var chartLS1 = new Chart(loss1, {
-    // The type of chart we want to create
+    // The type of chart we want to create 
     type: 'line',
 
     // The data for our dataset
@@ -1282,16 +1282,41 @@ https://www.google.com/search?tbm=isch&q=findSomeI
 
 
 $("#upld").on('change',function (e) {
+
+    var isImage = false;
     var form_data = new FormData($('#form_upld')[0]);
     document.getElementById("upldIcn").className = "fas fa-spinner fa-spin fa-lg mr-2 ";
     var reader = new FileReader();
+
     reader.onload = function(e) {
 		$('#ranImg').attr('src', e.target.result);
         }
-    if(this.files[0]!= undefined)
-   	 reader.readAsDataURL(this.files[0]);
+    if(this.files[0]!= undefined) 
+	if(this.files[0].type == 'image/jpeg' || this.files[0].type == 'image/jpg' || this.files[0].type == 'image/png'){
+   		 reader.readAsDataURL(this.files[0]);
+		 isImage = true;
+		}
+
+   
 
     $.ajax({
+    xhr: function() {
+			var xhr = new window.XMLHttpRequest();
+			xhr.upload.addEventListener("progress", function(evt) {
+			  if (evt.lengthComputable && isImage  ) {
+				var percentComplete = evt.loaded / evt.total;
+				percentComplete = parseInt(percentComplete * 100);
+				$('#spanUpldInner').html(percentComplete + " % uploaded")
+				if (percentComplete === 100) {
+				$('#spanUpldInner').html(" Waiting ...")
+
+				}
+				
+			  }
+			}, false); 
+ 
+			return xhr;
+		  },
       method: "POST",
       url: "/",
       data: form_data,
@@ -1301,19 +1326,13 @@ $("#upld").on('change',function (e) {
       processData: false
     }).done(function(data) {
     if (data['img'] == "ERROR_extention"){
-
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center disabled";
         document.getElementById("buttonModalUpld").click();
-        document.getElementById("ranImg").className = "d-none";
-        if($("#textinImage").hasClass("d-none"))
-                          $('#textinImage').removeClass("d-none");
-
-
-        
+	$('#spanUpld').html('<i id="upldIcn" class="fas fa-upload fa-lg mr-1"></i><span id="spanUpldInner">Upload image</span>');
+           
     }
-    else{
-	   
+    if (data['img'] != "ERROR_extention"){
     $('#ranImg').attr('data-original-title',"");
         if(data['h'] >=  data['w']){
             $('#ranImg').css("width","50%");
@@ -1334,6 +1353,7 @@ $("#upld").on('change',function (e) {
 	imgAdd = data['img']
         $('#textinImage').addClass("d-none"); 
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
+	$('#spanUpld').html('<i id="upldIcn" class="fas fa-upload fa-lg mr-1"></i><span id="spanUpldInner">Upload image</span>');
 
 
        
