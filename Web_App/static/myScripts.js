@@ -1295,6 +1295,9 @@ $("#upld").on('change',function (e) {
 	if(this.files[0].type == 'image/jpeg' || this.files[0].type == 'image/jpg' || this.files[0].type == 'image/png'){
    		 reader.readAsDataURL(this.files[0]);
 		 isImage = true;
+		 $('#ranImg').tooltip('disable');
+       		 $('#ranImg').tooltip('hide');
+
 		}
 
    
@@ -1346,8 +1349,7 @@ $("#upld").on('change',function (e) {
                   $('#gryTxt').addClass("bg-dark");
              }
 
-        $('#ranImg').tooltip('disable');
-        $('#ranImg').tooltip('hide');
+       
         document.getElementById("ranImg").className = "";
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center enabled";
 	imgAdd = data['img']
