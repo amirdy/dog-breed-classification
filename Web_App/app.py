@@ -117,7 +117,7 @@ def index():
           idx = imgsrc.index("/static/")
           
 
-          o1,p1,o2,p2,x=run.r(imgsrc[idx:])
+          o1,p1,o2,p2=run.r(imgsrc[idx:])
           
           f = open("log.txt", "a")
           f.write( "\n" + str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "," +o1 +"," +str(p1))
