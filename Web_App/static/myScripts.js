@@ -1327,7 +1327,7 @@ $("#upld").on('change',function (e) {
 				$('#spanUpldInner').html(" Waiting ...")
  				 $('#ranImg').tooltip('hide');
 				$('#ranImg').attr('src', addr);
-      				 $('#ranImg').attr('data-original-title',"Uploaded Image");
+      				 $('#ranImg').attr('data-original-title',"New Uploaded Image");
 
 				}
 				
