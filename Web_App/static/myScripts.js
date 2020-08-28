@@ -2,6 +2,7 @@ $(document).ready(function(){
 // welcome modal
 document.getElementById("wlcm").click();
 imgAdd = "ADDRESS"
+imgType = "Random"
 // loss fold1
 var loss1 = document.getElementById('ls1').getContext('2d');
 var chartLS1 = new Chart(loss1, {
@@ -954,6 +955,7 @@ var myBarChart = new Chart(ctx, {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
     prevran=1
    var photographer = ["Photo by Gabrielle Costa on Unsplash",
    "Photo by Jamie Street on Unsplash",
@@ -964,6 +966,7 @@ $(function () {
    "Photo by Jordan Whitt on Unsplash",
    "Photo by Marcus Wallis on Unsplash","Photo by JC Gellidon on Unsplash"];   
     $("#randomImage").on('click',function(){
+       imgType = "Random"
         document.getElementById("ranButtonIcn").className = "fas fa-spinner fa-spin fa-lg ";
         ran=Math.floor(Math.random() * 9); 
 
@@ -982,9 +985,12 @@ $(function () {
                     $('#gryTxt').css("border-width","1px");
                     if(!$("#gryTxt").hasClass("bg-dark"))
                           $('#gryTxt').addClass("bg-dark");
-              
+       
+          
         document.getElementById("ranButtonIcn").className = "fas fa-dog fa-lg";
-        $("#ranImg").attr('data-original-title',(photographer[ran]));
+        if(imgType == "Random"){
+	    $("#ranImg").attr('data-original-title',(photographer[ran]));
+	}
         if(window.innerWidth> 639){
         $("#ranImg").tooltip('enable');
         $("#ranImg").tooltip('show');
@@ -1286,16 +1292,17 @@ $("#upld").on('change',function (e) {
     var isImage = false;
     var form_data = new FormData($('#form_upld')[0]);
     document.getElementById("upldIcn").className = "fas fa-spinner fa-spin fa-lg mr-2 ";
-    var reader = new FileReader();
-
+    var reader = new FileReader(); 
+    var addr = ""
     reader.onload = function(e) {
-
-		$('#ranImg').attr('src', e.target.result);
+                addr = e.target.result
         }
     if(this.files[0]!= undefined)    
 	if(this.files[0].type == 'image/jpeg' || this.files[0].type == 'image/jpg' || this.files[0].type == 'image/png'){
-    	        //$('#ranImg').tooltip('disable');
-        	//$('#ranImg').tooltip('hide');
+                imgType = "Upld"
+        	$('#ranImg').tooltip('hide');
+                 document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center disabled";
+
 		//$('#ranImg').attr('data-original-title',"Uploaded Image");
                 
 		document.getElementById("randomImage").disabled = true;
@@ -1318,7 +1325,9 @@ $("#upld").on('change',function (e) {
 				$('#spanUpldInner').html(percentComplete + " % uploaded")
 				if (percentComplete === 100) {
 				$('#spanUpldInner').html(" Waiting ...")
-
+ 				 $('#ranImg').tooltip('hide');
+				$('#ranImg').attr('src', addr);
+      				 $('#ranImg').attr('data-original-title',"Uploaded Image");
 
 				}
 				
@@ -1343,7 +1352,8 @@ $("#upld").on('change',function (e) {
            
     }
     if (data['img'] != "ERROR_extention"){
-       $('#ranImg').attr('data-original-title',"Uploaded Image");
+     
+
         if(data['h'] >=  data['w']){
             $('#ranImg').css("width","50%");
             $('#gryTxt').css("border-width","0px");
