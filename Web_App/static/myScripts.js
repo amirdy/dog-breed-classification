@@ -1305,7 +1305,9 @@ $("#upld").on('change',function (e) {
 
 		//$('#ranImg').attr('data-original-title',"Uploaded Image");
                 
-		document.getElementById("randomImage").disabled = true;
+	 	document.getElementById("randomImage").disabled = true;
+	 	document.getElementById("upld").disabled = true;
+
    		 reader.readAsDataURL(this.files[0]);
 		 isImage = true;
 
@@ -1366,6 +1368,8 @@ $("#upld").on('change',function (e) {
                   $('#gryTxt').addClass("bg-dark");
              }
        document.getElementById("randomImage").disabled = false;
+	 	document.getElementById("upld").disabled = false;
+
         document.getElementById("ranImg").className = "";
         document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center enabled";
 	imgAdd = data['img']
