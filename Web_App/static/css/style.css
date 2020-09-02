@@ -164,7 +164,7 @@ table#dTable {
     }
 }
 @media(max-width: 383px ){
-    #randomImage,#spanUpld{
+    #randomImage,#spanUpld,#cancelUpload{
         font-size: small;
     }
 
