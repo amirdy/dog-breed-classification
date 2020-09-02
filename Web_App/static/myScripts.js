@@ -977,6 +977,7 @@ $(function () {
         $("#textinImage").addClass("d-none");
         $("#ranImg").attr("src",'./static/randomImg/'  + String(ran+1)+"/"+ String(ran+1)+"/" +String(ran+1) +'.jpg');
                 imgAdd = document.getElementById('ranImg').src
+		$('#whiteAreaUpld').css('opacity','1');
 
        // $("#ranImg").addClass("d-block");
        $("#ranImg").removeClass("d-none");
@@ -1310,14 +1311,15 @@ $("#upld").on('change',function (e) {
 
    		 reader.readAsDataURL(this.files[0]);
 		 isImage = true;
-
+		 $('#randomImage').addClass("d-none");
+		 $('#cancelUpload').removeClass("d-none");
 
 
 		}
 
    
 
-    $.ajax({
+    aj = $.ajax({
     xhr: function() {
 			var xhr = new window.XMLHttpRequest();
 			xhr.upload.addEventListener("progress", function(evt) {
@@ -1376,13 +1378,31 @@ $("#upld").on('change',function (e) {
         $('#textinImage').addClass("d-none"); 
         document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
 	$('#spanUpld').html('<i id="upldIcn" class="fas fa-upload fa-lg mr-1"></i><span id="spanUpldInner">Upload image</span>');
-
+	$('#cancelUpload').addClass("d-none");
+   	 $('#randomImage').removeClass("d-none");
+		
+		$('#whiteAreaUpld').css('opacity','1');
 
        
     }
 
   });
 });
+
+//cancel upload
+$("#cancelUpload").on('click',function (e) {
+	aj.abort();
+	document.getElementById("upldIcn").className = "fas fa-upload fa-lg mr-2";
+    document.getElementById("run").className = "btn btn-primary  d-flex  justify-content-center align-items-center disabled";
+    $('#spanUpld').html('<i id="upldIcn" class="fas fa-upload fa-lg mr-1"></i><span id="spanUpldInner">Upload image</span>');
+    $('#cancelUpload').addClass("d-none");
+    $('#randomImage').removeClass("d-none");	
+    document.getElementById("randomImage").disabled = false;
+    document.getElementById("upld").disabled = false;
+
+			
+});
+
 
 // ajax run
 $("#run").on('click',function (e) {
