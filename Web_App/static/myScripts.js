@@ -1315,6 +1315,8 @@ $(document).ready(function () {
                 isImage = true;
                 $('#randomImage').addClass("d-none");
                 $('#cancelUpload').removeClass("d-none");
+		        $('#cancelUpload').removeClass('disabled');
+		        document.getElementById("cancelUpload").disabled = false;
 
 
             }
@@ -1334,6 +1336,8 @@ $(document).ready(function () {
                             $('#ranImg').tooltip('hide');
                             $('#ranImg').attr('src', addr);
                             $('#ranImg').attr('data-original-title', "New Uploaded Image");
+                            $('#cancelUpload').addClass('disabled');
+				            document.getElementById("cancelUpload").disabled = true;
 
                         }
 
