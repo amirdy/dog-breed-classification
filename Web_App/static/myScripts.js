@@ -1331,13 +1331,16 @@ $(document).ready(function () {
                         var percentComplete = evt.loaded / evt.total;
                         percentComplete = parseInt(percentComplete * 100);
                         $('#spanUpldInner').html(percentComplete + " % uploaded")
+			if (percentComplete >= 95 ) {
+			    $('#cancelUpload').addClass('disabled');
+			    document.getElementById("cancelUpload").disabled = true;
+			}
                         if (percentComplete === 100) {
                             $('#spanUpldInner').html(" Waiting ...")
                             $('#ranImg').tooltip('hide');
                             $('#ranImg').attr('src', addr);
                             $('#ranImg').attr('data-original-title', "New Uploaded Image");
-                            $('#cancelUpload').addClass('disabled');
-			    document.getElementById("cancelUpload").disabled = true;
+                          
 
                         }
 
@@ -1428,6 +1431,7 @@ $(document).ready(function () {
         request.fail(function () {
             document.getElementById("runLogo").className = "fas fa-arrow-alt-circle-right fa-lg mr-2";
             document.getElementById("buttonModalSrvr").click();
+            document.getElementById("run").className = "btn btn-info  d-flex  justify-content-center align-items-center disabled";
 
         });
         request.done(function (data) {
