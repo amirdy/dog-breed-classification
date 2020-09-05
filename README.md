@@ -48,10 +48,10 @@ Leave the python shell and run the commands below:
 HTML - CSS - Js - Jquery - Bootstrap - Chart.js - Flask - Python 
 
 ### Icon Set:
-[Fontawesome](https://www.Fontawesome.com)
+[Fontawesome](https://www.Fontawesome.com)<sup>1</sup>
 
 ### Source of Images: 
-[Unsplash](https://unsplash.com/)
+[Unsplash](https://unsplash.com/)<sup>2</sup>
 
 # AI Section: 
 
@@ -59,17 +59,17 @@ HTML - CSS - Js - Jquery - Bootstrap - Chart.js - Flask - Python
 
 Combination of 3 datasets:
 
-- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
+- [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)<sup>3</sup>
 
-- [Dog Breed Classification](https://www.kaggle.com/venktesh/person-images)
+- [Dog Breed Classification](https://www.kaggle.com/venktesh/person-images)<sup>4</sup>
 
-- [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)
+- [Dog Breed Prediction Competition](https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition)<sup>5</sup>
 
 Number of total images:
 - 22790
 
 ### Model:
-- Using pretrained [EfficientNet-B3](https://arxiv.org/abs/1905.11946) model
+- Using pretrained [EfficientNet-B3](https://arxiv.org/abs/1905.11946)<sup>6</sup> model<sup>7</sup>
 
 - Image was fed into the model and the last Conv features were saved
 
@@ -130,6 +130,16 @@ Number of total images:
           - (In Epoch 135 | Accuracy : 92.46 %) [This model is selected]
           - Test Accuracy on this model : 92.33 %
 ![alt text](README_Files/loss5.png) ![alt text](README_Files/acc5.png)
+
+# References
+1. https://www.Fontawesome.com
+2. https://unsplash.com
+3. http://vision.stanford.edu/aditya86/ImageNetDogs/
+4. https://www.kaggle.com/venktesh/person-images
+5. https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition
+6. https://arxiv.org/abs/1905.11946
+7. https://github.com/lukemelas/EfficientNet-PyTorch
+
 
 
 
