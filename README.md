@@ -3,16 +3,16 @@
 This project predicts  the dog breed from 150 different breeds.
 
 ![Demo](README_Files/Demo.png)
-<ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
-<ins>[GIF(Mobile Browser)](#mobile-browser-demo)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[GIF(Computer Browser)](#computer-preview)</ins>&nbsp;&nbsp;&nbsp;
+<ins>[GIF(Mobile Browser)](#mobile-preview)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[Setup](#Setup)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[Web Application Section](#web-application-section)</ins>&nbsp;&nbsp;&nbsp;
 <ins>[AI Section](#ai-section)</ins>
 &nbsp;&nbsp;&nbsp;
-### Computer Browser Demo: 
+### Computer Preview: 
 ![Web Demo](README_Files/web.gif)
 
-### Mobile Browser Demo:
+### Mobile Preview:
 ![mobile Demo](README_Files/mobile.gif)
 
 # Setup
