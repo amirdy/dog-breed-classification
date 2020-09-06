@@ -132,13 +132,13 @@ Number of total images:
 ![alt text](README_Files/loss5.png) ![alt text](README_Files/acc5.png)
 
 # References
-1. https://www.Fontawesome.com
-2. https://unsplash.com
-3. http://vision.stanford.edu/aditya86/ImageNetDogs/
-4. https://www.kaggle.com/venktesh/person-images
-5. https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition
-6. https://arxiv.org/abs/1905.11946
-7. https://github.com/lukemelas/EfficientNet-PyTorch
+[1] https://www.Fontawesome.com
+[2] https://unsplash.com
+[3] http://vision.stanford.edu/aditya86/ImageNetDogs/
+[4] https://www.kaggle.com/venktesh/person-images
+[5] https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition
+[6] [Tan, Mingxing, and Quoc V. Le. "Efficientnet: Rethinking model scaling for convolutional neural networks." arXiv preprint arXiv:1905.11946 (2019).](https://arxiv.org/abs/1905.11946)
+[7] https://github.com/lukemelas/EfficientNet-PyTorch
 
 
 
