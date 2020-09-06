@@ -142,7 +142,7 @@ Number of total images:
 
 [5] https://www.kaggle.com/malhotra1432/dog-breed-prediction-competition
 
-[6] [Tan, Mingxing, and Quoc V. Le. "Efficientnet: Rethinking model scaling for convolutional neural networks." arXiv preprint arXiv:1905.11946 (2019).](https://arxiv.org/abs/1905.11946)
+[6] [Tan, M., & Le, Q. V. (2019). Efficientnet: Rethinking model scaling for convolutional neural networks. arXiv preprint arXiv:1905.11946.](https://arxiv.org/abs/1905.11946)
 
 [7] https://github.com/lukemelas/EfficientNet-PyTorch
 
