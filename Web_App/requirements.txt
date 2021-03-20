@@ -3,7 +3,7 @@ cycler==0.10.0
 enum34==1.1.10
 Flask==1.1.2
 future==0.18.2
-Jinja2==2.11.2
+Jinja2==2.11.3
 kiwisolver==1.2.0
 MarkupSafe==1.1.1
 matplotlib==3.2.1
