@@ -325,3 +325,9 @@ canvas#ls5 {
 a#materials {
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  #welcome {
+    font-size: 12px !important;
+  }
+}
+
