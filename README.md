@@ -1,7 +1,7 @@
 # Dog Breed Classification
 
 This is a <ins>Classification</ins> project. A Web Application that receives a dog picture as input and returns its breed as output. The model predicts the breed from 150 different breeds.
-[<ins>CLICK HERE TO START THE APP</ins>](http://45.90.74.81:80)
+[<ins>CLICK HERE TO START THE APP</ins>](http://62.106.95.203:5000)
 
 ![Demo](README_Files/Demo.png)
 <ins>[LIVE DEMO]()</ins>&nbsp;&nbsp;&nbsp;<ins>[Computer Preview](#computer-preview)</ins>&nbsp;&nbsp;&nbsp;
